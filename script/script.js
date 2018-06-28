@@ -17,7 +17,16 @@ supp()
 });
 
 
+var clock = $('h1').FlipClock( 1500,{
 
+    clockFace:"MinuteCounter",
+    // autoStart:false,
+
+});
+
+$("#start").click(function(event){
+    clock.start()
+})
 
 });
 
