@@ -2,63 +2,60 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KanbanPomodoro</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KanbanPomodoro</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row row1">
-            <div class="col col-12">
+  <div class="container">
+    <div class="row row1">
+      <div class="col col-12">
+        <h2>Kanban Pomodoro</h2>
+      </div>
 
+      <div class="col col-12">
+        <input type="text" class="newTask" value="" placeholder="Nouvelle tâche">
+        <input type="button" class="addTask" value="Ajouter">
+      </div>
+    </div>
 
-                <h2>Kanban Pomodoro</h2>
-            </div>
-            <div class="col col-12">
+    <div class="row row2">
+      <div class="col col-4">
+        <h3>A faire</h3>
+        <ul id="items" class="TaskToDo">
+          <li class="toDo">Tâches 3 <i class="remove">✖</i></li>
+          <li class="toDo">Tâches 4 <i class="remove">✖</i></li>
+          <li class="toDo">Tâches 5 <i class="remove">✖</i></li>
+        </ul>
+      </div>
 
-            <input type="text" class="newTask" value="" placeholder="Nouvelle tâche">
-            <input type="button" class="addTask" value="Ajouter">
-        </div>
+      <div class="col col-4">
+        <h3>En cours</h3>
+        <h1>25:00</h1>
+        <input type="button" id="start" value="Début">
+        <input type="button" id="stop" value="Pause">
+      </div>
+      <div class="col col-4">
+        <h3>Fait</h3>
+        <ul>
+          <li>Tâches 1</li>
+          <li>Tâches 2</li>
+          <li>Tâches 6</li>
 
-        </div>
-        <div class="row row2">
-
-            <div class="col col-4">
-                <h3>A faire</h3>
-                <ul>
-                    <li>Tâches 3</li>
-                    <li>Tâches 4</li>
-                    <li>Tâches 5</li>
-                </ul>
-            </div>
-
-            <div class="col col-4">
-                <h3>En cours</h3>
-                <h1>25:00</h1>
-                <input type="button" id="start" value="Début">
-                <input type="button" id="stop" value="Pause">
-            </div>
-            <div class="col col-4">
-                <h3>Fait</h3>
-                <ul>
-                    <li>Tâches 1</li>
-                    <li>Tâches 2</li>
-                    <li>Tâches 6</li>
-
-                </ul>
-            </div>
-
-        </div>
+        </ul>
+      </div>
 
     </div>
 
+  </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script/script.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/sortablejs/Sortable.min.js" charset="utf-8"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
