@@ -1,0 +1,22 @@
+.row1 {
+    text-align: center;
+    padding: 2em;
+
+}
+
+.row1 .newTask {
+
+    width: 70%;
+}
+
+.row2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
