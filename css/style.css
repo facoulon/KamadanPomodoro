@@ -13,10 +13,17 @@
     text-align: center;
 }
 
+
+
 li {
     list-style: none;
 }
 
 ul {
     padding: 0;
+    border: 1px solid;
 }
+ h3 {
+     border: 1px solid;
+
+ }

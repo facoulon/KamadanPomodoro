@@ -16,7 +16,7 @@ $("<li class='toDo'>" + task + "<i class='remove'> ✖</i>" + "</li>").appendTo(
 supp()
 });
 
-var clock = $('h1').FlipClock( 6, {
+var clock = $('h1').FlipClock( 1500, {
     clockFace: 'MinuteCounter',
     onInterval: function(){
       // $(".toDo").unshift()
