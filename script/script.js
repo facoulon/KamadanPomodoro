@@ -16,18 +16,22 @@ $("<li class='toDo'>" + task + "<i class='remove'> ✖</i>" + "</li>").appendTo(
 supp()
 });
 
-var clock = $('h1').FlipClock( 10, {
+var clock = $('h1').FlipClock( 6, {
     clockFace: 'MinuteCounter',
     onInterval: function(){
-      $(".toDo").unshift()
+      // $(".toDo").unshift()
       console.log(this.getFaceValue());
       if(this.getFaceValue() == 0){
         console.log($(".toDo")[0]);
       $(".done").append($(".toDo")[0]);
+      clock.stop()
+      clock.setFaceValue(0)
 
       }
     }
 });
+
+clock.setCountdown(true);
 
 $("#start").click(function(event){
     clock.start()
@@ -35,7 +39,6 @@ $("#start").click(function(event){
 $("#stop").click(function(event){
     clock.stop()
 })
-
 $("#reset").click(function(){
     clock.reset();
   })
